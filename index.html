@@ -338,20 +338,20 @@
 <li><p>js命名方式遵循文件命名规范，在此基础上加上前缀api，以便区分api文件。</p>
 </li>
 <li><p>export default apiUser 根据sonar的规范(By convention, a file that exports only one class, function, or constant should be named for that class, function or constant. Anything else may confuse maintainers.)。必须和文件名一样</p>
-<img src="/2020/02/26/normalize/ignore-error.png" class="">
+
 
 </li>
 </ol>
 <h3 id="assets"><a href="#assets" class="headerlink" title="assets"></a>assets</h3><p>assets目录主要存放图片文件，图片文件命名没有标准的规范。可参考<a href="https://guide.aotu.io/docs/name/image.html" target="_blank" rel="noopener">图片命名规范</a></p>
 <h3 id="components"><a href="#components" class="headerlink" title="components"></a>components</h3><p>存放公共组件，在一个项目中或多或少的存在一些复用的组件，这一类的组件统一在这个目录下进行管理。<br> 建议每一个组件用一个单独的目录进行管理，在index.js把组件暴露出去，这种做法方便做一些扩展。带来的问题是，可能需要多创建一个index.js，多写几行代码。<br> 采用这种目录结构以及引入index.js的方式，主要参考一些开源的后台管理项目。<code>iview-admin</code> ，<code>iview</code>， <code>飞冰的ICE Design Pro的模板</code>。</p>
-<img src="/2020/02/26/normalize/componet-js-pic.png" class="">
 
-<img src="/2020/02/26/normalize/compontent-vue-pic.png" class="">
+
+
 
 
 
 <h3 id="libs"><a href="#libs" class="headerlink" title="libs"></a>libs</h3><p>libs目录存放插件封装和配置, 比如 axios,vue-lazy等</p>
-<img src="/2020/02/26/normalize/axios-pic.png" class="">
+
 
 
 
@@ -367,14 +367,14 @@
 <li>在main.js中处理导航守卫，带来的问题main.js职责不明确，文件过大</li>
 <li>路由文件超过800行（目前的项目中的路由信息，有部分存在或即将存在这个问题）</li>
 </ol>
-<img src="/2020/02/26/normalize/router-pic.png" class="">
 
-<img src="/2020/02/26/normalize/router-module-pic.png" class="">
+
+
 
 
 
 <h3 id="store"><a href="#store" class="headerlink" title="store"></a>store</h3><p>store目录主要用于vuex状态管理。</p>
-<img src="/2020/02/26/normalize/img.png" class="">
+
 
 
 
