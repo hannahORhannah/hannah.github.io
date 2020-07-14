@@ -317,11 +317,23 @@
       
         
           
-            <h1 id="charles配置"><a href="#charles配置" class="headerlink" title="charles配置"></a>charles配置</h1><h4 id="maplocal"><a href="#maplocal" class="headerlink" title="maplocal"></a>maplocal</h4><p>方式一：起本地代理</p>
-<p>1.在终端切到本地文件所在目录，然后执行：http-server –cors .</p>
+            <h1 id="charles配置"><a href="#charles配置" class="headerlink" title="charles配置"></a>charles配置</h1><h4 id="maplocal"><a href="#maplocal" class="headerlink" title="maplocal"></a>maplocal</h4><h5 id="方式一：起本地代理"><a href="#方式一：起本地代理" class="headerlink" title="方式一：起本地代理"></a>方式一：起本地代理</h5><p>1.在终端切到本地文件所在目录，然后执行：http-server –cors .</p>
+<blockquote>
+<p><code>--cors</code> Enable CORS via the <code>Access-Control-Allow-Origin</code> header</p>
+</blockquote>
 <p>2.获得本地文件访问地址：<a href="http://10.100.36.194:8082/base.js" target="_blank" rel="noopener">http://10.100.36.194:8082/base.js</a></p>
 <p>3.配置map remote</p>
 <img src="/2020/07/06/charles/map-remote-a.jpg" class="">
+
+
+
+<h5 id="方式二：在charles配置Rewrite"><a href="#方式二：在charles配置Rewrite" class="headerlink" title="方式二：在charles配置Rewrite"></a>方式二：在charles配置Rewrite</h5><p>配置 <code>Access-Control-Allow-Origin:*</code> 返回头：</p>
+<ul>
+<li><img src="/2020/07/06/charles/map-local-a.jpg" class=""></li>
+<li><img src="/2020/07/06/charles/map-local-b.jpg" class=""></li>
+<li><img src="/2020/07/06/charles/map-local-c.jpg" class=""></li>
+</ul>
+
           
         
       
